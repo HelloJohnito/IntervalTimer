@@ -11,15 +11,27 @@ import UIKit
 
 class HomeViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
+    let headerId = "headerId"
     let cellId = "cellId"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView?.backgroundColor = .white
+        collectionView?.register(HeaderItemCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         collectionView?.register(RoundItemCell.self, forCellWithReuseIdentifier: cellId)
     }
     
-// Collection View Table
+// Header
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath)
+        return header
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: view.frame.width, height: 50)
+    }
+    
+// Body Collection View Table
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
@@ -37,6 +49,57 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
         return 1
     }
 
+}
+
+
+// Cells
+class HeaderItemCell: UICollectionViewCell {
+    override init(frame: CGRect){
+        super.init(frame: frame)
+        setupViews()
+    }
+    
+    func createLabel(title: String) -> UILabel{
+        let label = UILabel()
+//        label.backgroundColor = .red
+        label.text = title
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }
+    
+    let separatorLine: UIView = {
+        let view = UIView()
+        view.backgroundColor = .gray
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    func setupViews(){
+        let workoutTitle = createLabel(title: "Work Out")
+        let roundTitle = createLabel(title: "Rounds")
+        addSubview(workoutTitle)
+        addSubview(roundTitle)
+        addSubview(separatorLine)
+        
+        workoutTitle.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier:0.5).isActive = true
+        workoutTitle.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        workoutTitle.bottomAnchor.constraint(equalTo: separatorLine.topAnchor).isActive = true
+        workoutTitle.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 5).isActive = true
+        
+        roundTitle.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier:0.25).isActive = true
+        roundTitle.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        roundTitle.bottomAnchor.constraint(equalTo: separatorLine.topAnchor).isActive = true
+        roundTitle.leadingAnchor.constraint(equalTo: workoutTitle.trailingAnchor, constant: 15).isActive = true
+        
+        separatorLine.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        separatorLine.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        separatorLine.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        separatorLine.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
 
 
@@ -108,3 +171,6 @@ class RoundItemCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+
+// Add Header with title, # of rounds,
