@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB75DD7B231DB8A3005181CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75DD7A231DB8A3005181CC /* AppDelegate.swift */; };
+		AB75DD7D231DB8A3005181CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75DD7C231DB8A3005181CC /* HomeViewController.swift */; };
+		AB75DD83231DB8A3005181CC /* SimpleIntervalTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB75DD81231DB8A3005181CC /* SimpleIntervalTimer.xcdatamodeld */; };
+		AB75DD85231DB8A6005181CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB75DD84231DB8A6005181CC /* Assets.xcassets */; };
+		AB75DD88231DB8A6005181CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB75DD86231DB8A6005181CC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB75DD77231DB8A3005181CC /* SimpleIntervalTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleIntervalTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB75DD7A231DB8A3005181CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB75DD7C231DB8A3005181CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AB75DD82231DB8A3005181CC /* SimpleIntervalTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleIntervalTimer.xcdatamodel; sourceTree = "<group>"; };
+		AB75DD84231DB8A6005181CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB75DD87231DB8A6005181CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB75DD89231DB8A6005181CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB75DD74231DB8A3005181CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB75DD6E231DB8A3005181CC = {
+			isa = PBXGroup;
+			children = (
+				AB75DD79231DB8A3005181CC /* SimpleIntervalTimer */,
+				AB75DD78231DB8A3005181CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB75DD78231DB8A3005181CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB75DD77231DB8A3005181CC /* SimpleIntervalTimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB75DD79231DB8A3005181CC /* SimpleIntervalTimer */ = {
+			isa = PBXGroup;
+			children = (
+				AB75DD8F231DBEE5005181CC /* ViewControllers */,
+				AB75DD7A231DB8A3005181CC /* AppDelegate.swift */,
+				AB75DD84231DB8A6005181CC /* Assets.xcassets */,
+				AB75DD86231DB8A6005181CC /* LaunchScreen.storyboard */,
+				AB75DD89231DB8A6005181CC /* Info.plist */,
+				AB75DD81231DB8A3005181CC /* SimpleIntervalTimer.xcdatamodeld */,
+			);
+			path = SimpleIntervalTimer;
+			sourceTree = "<group>";
+		};
+		AB75DD8F231DBEE5005181CC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB75DD7C231DB8A3005181CC /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB75DD76231DB8A3005181CC /* SimpleIntervalTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB75DD8C231DB8A6005181CC /* Build configuration list for PBXNativeTarget "SimpleIntervalTimer" */;
+			buildPhases = (
+				AB75DD73231DB8A3005181CC /* Sources */,
+				AB75DD74231DB8A3005181CC /* Frameworks */,
+				AB75DD75231DB8A3005181CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleIntervalTimer;
+			productName = SimpleIntervalTimer;
+			productReference = AB75DD77231DB8A3005181CC /* SimpleIntervalTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB75DD6F231DB8A3005181CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Johnito;
+				TargetAttributes = {
+					AB75DD76231DB8A3005181CC = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = AB75DD72231DB8A3005181CC /* Build configuration list for PBXProject "SimpleIntervalTimer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB75DD6E231DB8A3005181CC;
+			productRefGroup = AB75DD78231DB8A3005181CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB75DD76231DB8A3005181CC /* SimpleIntervalTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB75DD75231DB8A3005181CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB75DD88231DB8A6005181CC /* LaunchScreen.storyboard in Resources */,
+				AB75DD85231DB8A6005181CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB75DD73231DB8A3005181CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB75DD7D231DB8A3005181CC /* HomeViewController.swift in Sources */,
+				AB75DD7B231DB8A3005181CC /* AppDelegate.swift in Sources */,
+				AB75DD83231DB8A3005181CC /* SimpleIntervalTimer.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB75DD86231DB8A6005181CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB75DD87231DB8A6005181CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB75DD8A231DB8A6005181CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB75DD8B231DB8A6005181CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB75DD8D231DB8A6005181CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N3R5NNRND3;
+				INFOPLIST_FILE = SimpleIntervalTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnito.SimpleIntervalTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB75DD8E231DB8A6005181CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N3R5NNRND3;
+				INFOPLIST_FILE = SimpleIntervalTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnito.SimpleIntervalTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB75DD72231DB8A3005181CC /* Build configuration list for PBXProject "SimpleIntervalTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB75DD8A231DB8A6005181CC /* Debug */,
+				AB75DD8B231DB8A6005181CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB75DD8C231DB8A6005181CC /* Build configuration list for PBXNativeTarget "SimpleIntervalTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB75DD8D231DB8A6005181CC /* Debug */,
+				AB75DD8E231DB8A6005181CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AB75DD81231DB8A3005181CC /* SimpleIntervalTimer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AB75DD82231DB8A3005181CC /* SimpleIntervalTimer.xcdatamodel */,
+			);
+			currentVersion = AB75DD82231DB8A3005181CC /* SimpleIntervalTimer.xcdatamodel */;
+			path = SimpleIntervalTimer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AB75DD6F231DB8A3005181CC /* Project object */;
+}
